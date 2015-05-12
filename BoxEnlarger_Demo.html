@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<title>Box_Enlarger_Demo</title>
+	<style rel="stylesheet">
+
+		body {
+			height:1440px;
+			background-color:#E6FFE8;
+		}
+
+		div {
+			height:300px;
+			overflow:hidden;
+			width:900px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.first {
+			margin-top:200px;
+		}
+		
+		.box {
+			width:200px;
+			height:200px;
+			margin-top:30px;
+			background-color:#FF7E79;
+		}
+
+		.box.left {
+			float:left;
+		}
+
+		.box.right {
+			float:right;
+		}
+	</style>
+</head>
+<body>
+	<div class="first">
+	 	<div class="box left"></div>
+		<div class="box right"></div>
+	</div>
+	<div>
+	 	<div class="box left"></div>
+		<div class="box right"></div>
+	</div>
+	<div>
+	 	<div class="box left"></div>
+		<div class="box right"></div>
+	</div>
+	<div>
+	 	<div class="box left"></div>
+		<div class="box right"></div>
+	</div>
+	<script type="text/javascript" src="BoxEnlarger.js" ></script>
+	<script type="text/javascript">
+		BoxEnlarger("box", 50);
+	</script>
+</body>
+</html>
